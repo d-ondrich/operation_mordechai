@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Operation Mordechai</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:regular|Playfair+Display:regular&amp;display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        min-height: 100vh;
+        background-color: transparent;
+      }
+      /* Remove the navbar's default margin-bottom and rounded borders */ 
+      .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+        border-color: transparent;
+        /* background-color: #0b223c; */
+        background-color: #ffffff;
+        /* height: 30px; */
+      }
+
+      .playfair-font {
+        font-family: Playfair Display;
+        line-height: 1.15;
+        letter-spacing: 1px;
+      }
+      .bold-font {
+        color: #000000;
+        font-weight: 900;
+      }
+      
+      /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+      .row.content {height: 450px}
+      
+      /* Set black background color, white text and some padding */
+      footer {
+        /* background-color: #0b223c; */
+        background-color: #0057b7;
+        color: white;
+        padding: 15px;
+      }
+
+      h1 {
+        color: #1967be;
+      }
+
+      h3 {
+        color: #1967be;
+      }
+      
+      .donation-text {
+        color: #4685cb;
+      }
+
+      .contact {
+        padding: 10px 15px;
+        margin: 10px;
+        font-weight: 800;
+      }
+      
+      /* On small screens, set height to 'auto' for sidenav and grid */
+      @media screen and (max-width: 767px) {
+        .sidenav {
+          height: auto;
+          padding: 15px;
+        }
+        .row.content {height:auto;} 
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <span class="pull-left"><img src="./assets/logo.png" alt="operation-mordechai-logo" width="400" height="50"></span> 
+      <span class="contact pull-right"><a href="mailto:kelfermj@gmail.com">Contact Us</a></span>
+    </nav>
+    <div class="container-fluid">    
+      <div class="row content">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 text-center"> 
+          <img src="./assets/flag.png" alt="Ukranian Flag" width="600" height="400"/>
+          <h1 class="playfair-font">Interested in Donating</h1>
+          <div class="row content">
+            <div class="col-sm-6">
+              <h3 class="playfair-font">By Check</h3>
+              <p class="donation-text">Checks may be made out to <span class="bold-font">Operation Mordechai, Inc</span> and sent to <span class="bold-font">1301 Spanish River Road, Boca Raton, FL 33432</span></p>
+            </div>
+            <div class="col-sm-6">
+              <h3 class="playfair-font">ACH Money Transfer</h3>
+              <p class="donation-text">Transfers can be made to:</p>
+              <p class="donation-text">Routing: <span class="bold-font">211371926</span></p>
+              <p class="donation-text">Account: <span class="bold-font">490260496</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+    </div>
+
+    <footer class="container-fluid text-center footer navbar-fixed-bottom">
+      <p>Operation Mordechai, Inc is a 501(c)3 non-profit organization (Tax ID 88-1217010)</p>
+    </footer>
+  </body>
+</html>

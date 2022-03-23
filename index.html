@@ -12,7 +12,11 @@
     <style>
       body {
         /* min-height: 100vh; */
-        background-color: transparent;
+        background-image: url('./assets/ukranian-flag.jpeg');
+        /* background-origin: content-box; */
+        background-repeat: no-repeat;
+        /* background-size: auto; */
+
       }
       /* Remove the navbar's default margin-bottom and rounded borders */ 
       .navbar {
@@ -20,14 +24,9 @@
         border-color: transparent;
         margin-bottom: 0;
         /* background-color: #0b223c; */
-        /* background-color: #ffffff; */
+        background-color: #ffffff;
         min-height: 50px;
       }
-
-      /* .donation-navbar {
-        background-color: #f6f6f6;
-        min-height: 20px;
-      } */
 
       .playfair-font {
         font-family: Playfair Display;
@@ -70,15 +69,16 @@
       }
 
       .team-row {        
-        background-color: #0057b7;
+        /* background-color: #0057b7; */
       }
 
       .progress-row {
-        background-color: #f3f6f6;
+        /* background-color: #f3f6f6; */
       }
 
       .mission-row {
-        background-color: #4685cb;
+        /* background-color: #4685cb; */
+        /* background-image: url('./assets/ukranian-flag.jpeg'); */
       }
 
       .logo-container {
@@ -98,14 +98,14 @@
       }
 
       .donate-container {
-        padding: 20px;
+        /* padding: 20px; */
         background-color: #ffffff;
         font-size: 16px;
         font-family: Nunito;
         color: #212325;
         font-weight: 300;
         line-height: 1.45;
-        margin: 10px 0;
+        /* margin: 10px 0; */
       }
 
       .progress-container {
@@ -116,7 +116,7 @@
         color: #212325;
         font-weight: 300;
         line-height: 1.45;
-        margin: 10px 20px;
+        margin: 20px 20px;
         /* max-width: 500px; */
       }
 
@@ -128,7 +128,7 @@
         color: #212325;
         font-weight: 300;
         line-height: 1.45;
-        margin: 10px 20px;
+        margin: 20px 20px;
         /* max-width: 500px; */
       }
 
@@ -143,24 +143,41 @@
         margin-bottom: 10px;
       }
 
+      .logo-img {
+        width: 400px;
+        height: 50px;
+      }
+
       #paypal-img {
         width: 200px;
         height: 60px;
       }
-      
-      /* On small screens, set height to 'auto' for sidenav and grid */
-      @media screen and (max-width: 767px) {
-        .sidenav {
-          height: auto;
-          padding: 15px;
+
+      @media (max-width: 576px) {
+        .morderchai-img {
+          width: 200px;
+          height: 300px;
         }
-        .row.content {height:auto;} 
+        .logo-img {
+          width: 300px;
+          height: 37px;
+        }
       }
+
+      /* // Medium devices (tablets, 768px and up) */
+      @media (min-width: 768px) { ... }
+
+      /* // Large devices (desktops, 992px and up) */
+      @media (min-width: 992px) { ... }
+
+      /* // Extra large devices (large desktops, 1200px and up) */
+      @media (min-width: 1200px) { ... }
+
     </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <span class="logo-container pull-left"><img src="./assets/logo.png" alt="operation-mordechai-logo" width="400" height="50"></span> 
+      <span class="logo-container pull-left"><img class="logo-img" src="./assets/logo.png" alt="operation-mordechai-logo"></span> 
       <span class="contact pull-right"><a href="mailto:kelfermj@gmail.com">Contact Us</a></span>
     </nav>
     <div class="container-fluid">    
@@ -198,12 +215,12 @@
         <div class="col-sm-1"></div>
       </div>
       <div class="row content team-row justify-content-around">
-        <div class="col-sm-1"></div>
+        <div class="col-sm-2"></div>
         <div class="col-sm-4 text-center team-container"> 
           <h1 class="playfair-font">Our Team</h1>
           <p class="text-left">Operation Mordechai is a small dedicated group of professionals that coordinates the donation of supplies, flight and ground operations, distribution of relief supplies, and ensures proper resettlement in Israel to accepting organizations.</p>
         </div>
-        <div class="col-sm-7"></div>
+        <div class="col-sm-6"></div>
       </div>
       <div class="row content donate-container">
         <div class="col-sm-2"></div>
@@ -247,7 +264,7 @@
       <div class="row content contact-row">
         <div class="col-sm-2"></div>
         <div class="col-sm-8 text-center"> 
-          <img class="morderchai-img" src="./assets/mordechai.png" alt="mordechai" width="400" height="600"/>
+          <img class="morderchai-img" src="./assets/mordechai.png" alt="mordechai"/>
           <p>In honor of Max (Mordechai) Golditch, who fled Kiev at the age of 6 to escape antisemitism and persecution</p>
           <h1 class="playfair-font">Contact Us</h1>
           <p>Comments or questions? Contact Us!</p>
@@ -256,7 +273,7 @@
         <div class="col-sm-2"></div>
       </div>
     </div>
-    <footer class="container-fluid text-center footer navbar-fixed-bottom">
+    <footer class="container-fluid text-center footer">
       <p>Operation Mordechai, Inc. is a 501©3 nonprofit organization (Tax ID 88-1217010). All donations are tax deductible to the extent allowed by the law</p>
     </footer>
   </body>

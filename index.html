@@ -61,6 +61,11 @@
         margin: 10px;
         font-weight: 800;
       }
+
+      #paypal-img {
+        width: 200px;
+        height: 60px;
+      }
       
       /* On small screens, set height to 'auto' for sidenav and grid */
       @media screen and (max-width: 767px) {
@@ -84,11 +89,15 @@
           <img src="./assets/flag.png" alt="Ukranian Flag" width="600" height="400"/>
           <h1 class="playfair-font">Interested in Donating</h1>
           <div class="row content">
-            <div class="col-sm-6">
+            <div class="col-sm-4">
               <h3 class="playfair-font">By Check</h3>
               <p class="donation-text">Checks may be made out to <span class="bold-font">Operation Mordechai, Inc</span> and sent to <span class="bold-font">1301 Spanish River Road, Boca Raton, FL 33432</span></p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-4">
+              <h3 class="playfair-font">Paypal</h3>
+              <a href="https://www.paypal.com/donate/?hosted_button_id=V5Q8EJ6YNVJLJ"><img id="paypal-img" src="./assets/paypal.png" alt="paypal-donate"/></a>
+            </div>
+            <div class="col-sm-4">
               <h3 class="playfair-font">ACH Money Transfer</h3>
               <p class="donation-text">Transfers can be made to:</p>
               <p class="donation-text">Routing: <span class="bold-font">211371926</span></p>

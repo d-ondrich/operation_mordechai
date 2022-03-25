@@ -37,6 +37,7 @@
         line-height: 1.15;
         letter-spacing: 1px;
       }
+
       .bold-font {
         color: #000000;
         font-weight: 900;
@@ -67,6 +68,14 @@
       }
 
       .contact-row {
+        padding-top: 20px;
+        padding-bottom: 50px;
+        background-color: #f3f6f6;
+      }
+
+      .coverage-row {
+        margin-top: 20px;
+        margin-bottom: 20px;
         padding-top: 20px;
         padding-bottom: 50px;
         background-color: #f3f6f6;
@@ -166,7 +175,16 @@
         width: 30px;
       }
 
+      .video-iframe {
+        width: 840px;
+        height: 472px;
+      }
+
       @media (max-width: 576px) {
+        .video-iframe {
+          width: 420px;
+          height: 236px;
+        }
         .morderchai-img {
           width: 200px;
           height: 300px;
@@ -248,10 +266,20 @@
         </div>
         <div class="col-sm-6"></div>
       </div>
+      <div class="row content coverage-row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 text-center"> 
+          <iframe class="video-iframe" src="https://streamable.com/e/p59zv9" frameborder="0" allowfullscreen></iframe>
+          <h1 class="playfair-font">In The News!</h1>
+          <a href="https://www.wpbf.com/article/family-boca-raton-operation-mordechai-help-ukrainian-refugees-israel/39517630">Interview with WPBF News</a>
+          <br/>
+          <a href="https://cimages.me/content/Operation-Mordechai">Article in City Images</a>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
       <div class="row content donate-container">
         <div class="col-sm-2"></div>
         <div class="col-sm-8 text-center"> 
-          <!-- <img src="./assets/flag.png" alt="Ukranian Flag" width="300" height="200"/> -->
           <h1 class="playfair-font">Next Steps</h1>
           <div class="row content">
             <div class="col-sm-4"></div>
@@ -266,7 +294,6 @@
       <div class="row content donate-container">
         <div class="col-sm-2"></div>
         <div class="col-sm-8 text-center"> 
-          <!-- <img src="./assets/flag.png" alt="Ukranian Flag" width="300" height="200"/> -->
           <h1 class="playfair-font">Interested in Donating</h1>
           <div class="row content">
             <div class="col-sm-4">
